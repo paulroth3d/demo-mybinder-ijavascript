@@ -22,6 +22,8 @@ WORKDIR /home/node
 
 COPY --chown=node:node . .
 
+RUN npm install -g npm
+
 RUN npm install -g ijavascript
 RUN ijsinstall
 
