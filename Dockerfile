@@ -12,6 +12,7 @@ RUN pip3 install -I \
     jupyter_contrib_nbextensions
 
 RUN chmod 777 /usr/local/lib/node_modules
+RUN chmod 777 /usr/local/bin
 
 USER node
 
