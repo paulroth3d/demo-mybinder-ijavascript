@@ -11,6 +11,8 @@ RUN pip3 install -I \
     ipywidgets \
     jupyter_contrib_nbextensions
 
+RUN chmod 777 /usr/local/lib/node_modules
+
 USER node
 
 WORKDIR /home/node
