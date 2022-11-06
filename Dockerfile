@@ -17,7 +17,11 @@ WORKDIR /home/node
 
 COPY --chown=node:node . .
 
+RUN npm install -g ijavascript
+RUN ijsinstall
+
 RUN rm -rf node_modules && npm install jupyter-ijavascript-utils
+
 
 CMD npm run test && node bin/ijsinstall.js
 
