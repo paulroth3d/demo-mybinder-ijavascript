@@ -1,7 +1,7 @@
 FROM node:latest
 
 RUN apt-get update && \
-    apt-get install -yq --no-install-recommends libzmq3-dev jupyter python3-pip && \
+    apt-get install -yq --no-install-recommends gcc g++ make libzmq3-dev jupyter python3-pip && \
     apt-get clean
 
 RUN pip3 install -I \
